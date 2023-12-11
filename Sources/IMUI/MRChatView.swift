@@ -17,13 +17,13 @@ public class ChatService: ObservableObject {
     }
 }
 
-struct MRChatView: View {
+public struct MRChatView: View {
     // 假设当前用户的昵称是 "Me"
     let currentUser = "Me"
     @State private var messageText: String = ""
     @ObservedObject var chatService = ChatService()
     
-    var body: some View {
+    public var body: some View {
         VStack {
             ScrollViewReader { scrollViewProxy in
                 ScrollView {
