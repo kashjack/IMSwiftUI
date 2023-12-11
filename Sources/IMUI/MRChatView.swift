@@ -8,7 +8,7 @@
 import SwiftUI
 
 // 聊天服务
-class ChatService: ObservableObject {
+public class ChatService: ObservableObject {
     @Published var messages: [MRMessage] = [] // 消息列表
     
     func sendMessage(_ chatMessage: MRMessage) {
