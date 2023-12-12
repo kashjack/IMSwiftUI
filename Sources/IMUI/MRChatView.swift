@@ -23,6 +23,8 @@ public struct MRChatView: View {
     @State private var messageText: String = ""
     @ObservedObject var chatService = ChatService()
     
+    public init() {}
+    
     public var body: some View {
         VStack {
             ScrollViewReader { scrollViewProxy in
